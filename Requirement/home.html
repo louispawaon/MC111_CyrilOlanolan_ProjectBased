@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModernFarming</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <!-- Custom Style -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/ModernFarmingIcon.svg">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Niramit">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="home.html" class="logo">Modern<span class="logo-farming">Farming</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="data_table.html">Data Table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- WELCOME ROW -->
+    <div class="container-fluid my-5">
+        <div class="row">
+            <h1 class="h1 fw-bold text-center">Welcome to<br>Modern<span class="logo-farming">Farming</span>!</h1>
+        </div>
+    </div>
+
+    <!-- SAMPLE DATA ROW -->
+    <div class="container-fluid mb-4">
+        <div class="row mx-3 mx-lg-5 gy-4">
+            <div class="col-lg-6">
+                <div class="bubble">
+                    <h2 class="h2 fw-bold text-center mb-3">Smart Farming</h2>
+                    <p class="text-justify">Smart farming is a new idea that refers to farm management that applies 
+                        the contemporary information and communication technologies to raise the number 
+                        and quality of crops while minimizing the amount of human work necessary.</p>
+                    <ul class="ps-4 ps-lg-5">
+                        <li class="text-justify">Sensors: soil, water, light intensity, CO<sub>2</sub> Concentration, humidity, temperature, dust</li>
+                        <li class="text-justify">Software: new technology software applied for <abbr title="Internet of Things">IoT</abbr> Platform</li>
+                        <li class="text-justify">Connection: Wi-Fi, cellular (4G/5G), LoRa</li>
+                        <li class="text-justify">Location: GPS, Satellite, ect.</li>
+                        <li class="text-justify">Data Record and Analytic: on-Cloud, Local, AI features</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="bubble height-fill-container">
+                    <h2 class="h2 fw-bold mb-3">Smart Industrial</h2>
+                    <p class="text-justify">The Industrial Internet of Things (IIoT), which serves as the foundation 
+                        for Industry 4.0 and Smart Factory, connects smart factories, machines, industrial infrastructure, 
+                        management systems, and other devices in order to streamline business operations and create intelligent, 
+                        self-optimizing industrial equipment and facilities. Innovative IoT solutions can handle 
+                        a variety of difficulties linked to the management of equipment and resources, 
+                        as well as the security and safety of people.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DATA TABLE PROMPT ROW -->
+    <div class="container-fluid mb-4">
+        <div class="row mx-3 mx-lg-5">
+            <div class="col-12">
+                <div class="bubble">
+                    <h2 class="h2 fw-bold text-center mb-3">
+                        Carbon Dioxide (CO<sub>2</sub>) &
+                        <br>
+                        Average Temparature Data
+                    </h1>
+                    <p class="text-center mb-5" id="parag-CO2">See how Carbon Dioxide (CO<sub>2</sub>) Emissions over the years is visualized in-site!</p>
+                    <a href="data_table.html" class="h1 fs-5 fw-bold" id="button-data-table">Go to Data Table</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT US ROW -->
+    <div class="container-fluid mb-5">
+        <div class="row mx-3 mx-lg-5">
+            <div class="col-12">
+                <div class="bubble">
+                    <h3 class="h3 text-center fw-bold fs-2 mb-3">About Us</h3>
+                    <p class="text-justify">ModernFarming is a website that discusses what 
+                        farming looks like in the modern setup. Technology has improved so much over the years 
+                        and these innovations also made farming life faster, easier, and more efficient! 
+                        We call it Smart Farming. In today’s era, we can utilize Smart Farming as a way to 
+                        increase our yields and in turn, generate more income whilst lessening the usage of vital resources like manpower.
+                        <br><br>
+                        Aside from this, ModernFarming also has a tracker for the CO2 Emmissions. 
+                        Different tables are provided to understand the trend and significance of this 
+                        in your modern farming life. 
+                        <br><br>
+                        <span class="fw-light">Data source:</span>
+                        <a href="https://datahub.io/core/co2-ppm" target="_blank" id="req-link">Data Hub</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-fluid pb-2">
+            <div class="row mx-3 mx-lg-5 px-3 px-md-4 gy-4">
+                <div class="col col-md-6">
+                    <p class="">
+                        For support/information, please contact:
+                        <br><br>
+                        E-mail: <a id="email" href="mailto:olanolancyrilm@gmail.com">olanolancyrilm@gmail.com</a>
+                        <br><br>
+                        <span class="fw-light">This is only a sample static webpage for MC111.</span>
+                        </p>
+                        <p id="thai-thank-you">ขอขอบคุณ!</p>
+                </div>
+                <div class="col col-md-6">
+                    <p>
+                        <span class="fw-bold">Social Media:</span>
+                        <br>
+                        LinkedIn (<a id="email" href="https://www.linkedin.com/in/cyrilolanolan/" target="_blank">Cyril Olanolan</a>)<br>
+                        Facebook (<a id="email" href="https://www.facebook.com/CyrilOlanolan" target="_blank">Cyril Malinao Olanolan</a>)<br>
+                        Instagram (<a id="email" href="https://www.instagram.com/CyrilOlanolan" target="_blank">@CyrilOlanolan</a>)<br>
+                        Twitter (<a id="email" href="https://www.twitter.com/CyrilOlanolan" target="_blank">@CyrilOlanolan</a>)<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap Bundle with Popper for Components -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

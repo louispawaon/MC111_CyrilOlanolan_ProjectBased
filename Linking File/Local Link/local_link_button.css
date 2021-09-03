@@ -1,0 +1,14 @@
+.button {
+    color: white;
+    background-color: green;
+    padding: 20px 35px;
+    margin: 10px auto;
+    display: block;
+    font-weight: bold;
+    border: 0;
+}
+
+.button:hover,
+.button:active {
+    background-color: darkgreen;
+}
