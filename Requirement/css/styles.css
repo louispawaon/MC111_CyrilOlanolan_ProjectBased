@@ -1,11 +1,18 @@
 /* BODY */
 html, body{
+    position: relative;
     height: 100%;
+    
 }
 body {
     background-color: #D1E7DD;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
+.wrapper {
+    flex: 1 0 auto;
+}
 .height-fill-container {
     height: 100% !important;
 }
@@ -91,17 +98,22 @@ body {
 #thai-thank-you {
     font-family: Niramit;
 }
-
 @keyframes changecolor {
+    
     from {
         background-color: #D1E7DD;
+        
     }
 
     to {
         background-color: #effff8;
+        
     }
 }
 
-.footer {
+
+.footer,.push {
     animation: changecolor 3.5s alternate-reverse infinite;
+    position:sticky;
+    top:100%;
 }
